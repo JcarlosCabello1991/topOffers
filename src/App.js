@@ -14,6 +14,8 @@ import Maybelline from './components/Maybelline';
 import Anastasia from './components/Anastasia';
 import Dior from './components/Dior';
 import Clusters from './components/Clusters';
+import { Helmet } from 'react-helmet';
+
 
 function App() {
 
@@ -35,6 +37,11 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>MakeUp Offers</title>
+        <meta property="og:title" content="MakeUp Offers" />
+        <meta property="og:image" content="../miniatura.png" />
+      </Helmet>
       <div className='productsContainer'>
         <div className='header'>
           <img src={logo1} alt='logo' className='logoImage'/>
